@@ -213,6 +213,14 @@ main {
     color:#3a3a3a
 }
 
+/*Media query: large or landscape phones (576 px and up)*/
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* Media query: tablets and larger (768 px and up) */
 @media screen and (min-width: 768px) {
     /*Header*/
@@ -271,6 +279,12 @@ main {
             align-self: flex-end;
         }
 
+    /*Gallery*/
+        #photos {
+            column-count: 3;
+            column-gap: 0;
+        }
+
 }
 
 /*Media query: Laptop and larger (992 px and up) */
@@ -278,6 +292,12 @@ main {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a
     }
+
+     /*Gallery*/
+         #photos {
+             column-count: 4;
+             column-gap: 0;
+         }
 }
 
 /*Media query: Desktop and larger (1200 px and up) */
